@@ -2,8 +2,12 @@ NAME := ft_turing
 
 all: $(NAME)
 
-$(NAME): build
+$(NAME): _build
 
-build: 
+_build: 
 	dune build
+	@ln -sf _build/install/default/bin/$(NAME) .
 
+clean:
+	@unlink ./$(NAME)
+	dune clean 
