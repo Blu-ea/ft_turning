@@ -1,6 +1,7 @@
 (lang dune 3.15)
 
 (name ft_turing)
+(version 0251415-dirty)
 
 (generate_opam_files true)
 
@@ -13,13 +14,13 @@
 
 (license LICENSE)
 
-; (documentation https://url/to/documentation) ; wont be done
+(documentation https://github.com/Blu-ea/ft_turing/blob/main/README.md)
 
 (package
  (name ft_turing)
  (synopsis "42 ft_turing")
  (description "A turing machine from the 42 school project")
- (depends ocaml dune)
+ (depends ocaml dune yojson core)
  (tags
   (topics "to describe" your project)))
 
